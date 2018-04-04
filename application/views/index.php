@@ -8,12 +8,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
 <title>UWI eAdvising</title>
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--changed js and css links to codeigniter format to reference from root folders css and js-->
+<link rel = "stylesheet" type = "text/css" media="all" href = "<?php echo base_url();?>css/style.css">
+<link rel = "stylesheet" type = "text/css" media="all" href = "<?php echo base_url();?>css/examples.css">
+<script type = 'text/javascript' src = "<?php echo base_url();?>js/jquery-1.8.1.min.js"></script>
+<script type = 'text/javascript' src = "<?php echo base_url();?>js/jquery.carouFredSel-6.0.5-packed.js"></script>
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link rel="stylesheet" href="css/examples.css" type="text/css" media="all" />
-<script src="js/jquery-1.8.1.min.js"></script>
-<script src="js/jquery.carouFredSel-6.0.5-packed.js"></script>
+
+
 <script type="text/javascript" language="javascript">
 			$(function() {
 				
@@ -48,7 +53,7 @@ $("#foo3").carouFredSel({
 <div class="wrapper">
    <div class="header">
        <div class="logo">
-			<a href="index.html"><img src="../web/images/uwilogo.png" width = "200" /></a>
+			<a href="index.html"><img src="<?php echo base_url();?>images/uwilogo.png" width = "200" /></a> <!--changed src to codeigniter format to reference from root-->
 	   </div>
 	   <div class="menu">
 			<ul>
