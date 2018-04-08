@@ -53,11 +53,11 @@ $("#foo3").carouFredSel({
 <div class="wrapper">
    <div class="header">
        <div class="logo">
-			<a href="index.html"><img src="<?php echo base_url();?>images/uwilogo.png" width = "200" /></a> <!--changed src to codeigniter format to reference from root-->
+			<a href="index.html"><img src="<?php echo base_url();?>img/uwilogo.png" width = "200" /></a> <!--changed src to codeigniter format to reference from root-->
 	   </div>
 	   <div class="menu">
 			<ul>
-				 <li><a href="index.html">Home</a></li>
+				 <li><?php echo anchor('welcome', 'Click here');?></li>
 				 <li><a href="about.html">About</a></li>
 				 <li><a href="programs.html">Courses</a></li>
 				 <li><a href="programs.html">GPA Info</a></li>
@@ -72,28 +72,28 @@ $("#foo3").carouFredSel({
 					<div class="html_carousel">
 						<div id="foo3">
 							<div class="slide">
-								<img src="images/e1.jpg" alt="carousel 1" width="1000" height="450"/>
+								<img src="<?php echo base_url();?>img/e1.jpg" alt="carousel 1" width="1000" height="450"/>
 								<div>
 									<h4>Infinity</h4>
 									<p>A concept that in many fields refers to a quantity without bound or end.</p>
 								</div>
 							</div>
 							<div class="slide">
-								<img src="images/lib.jpg" alt="carousel 2" width="1000" height="450"  />
+								<img src="<?php echo base_url();?>img/lib.jpg" alt="carousel 2" width="1000" height="450"  />
 								<div>
 									<h4>Circular journey</h4>
 									<p>An excursion in which the final destination is the same as the starting point.</p>
 								</div>
 							</div>
 							<div class="slide">
-								<img src="images/e3.jpg" alt="carousel 3" width="1000" height="450" />
+								<img src="<?php echo base_url();?>img/e3.jpg" alt="carousel 3" width="1000" height="450" />
 								<div>
 									<h4>jQuery</h4>
 									<p>jQuery is a JavaScript library designed to simplify the client-side scripting.</p>
 								</div>
 							</div>
 							<div class="slide">
-								<img src="images/e4.jpg" alt="carousel 4" width="1000" height="450" />
+								<img src="<?php echo base_url();?>img/e4.jpg" alt="carousel 4" width="1000" height="450" />
 								<div>
 									<h4>Carousel</h4>
 									<p>A carousel is an amusement ride consisting of a rotating circular platform with seats.</p>
@@ -112,25 +112,25 @@ $("#foo3").carouFredSel({
    <div class="content">
 		<div class="grids">	
 			<div class="bot-grid">
-					<img src="images/kyle.jpg" alt="" />
+					<img src="<?php echo base_url();?>img/kyle.jpg" alt="" />
 					<h3>Our Advisors</h3>
 					<p>soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; </p>
 					<a href="#"><p><span class="one">Read More</span></p></a>
 			</div>
 			<div class="bot-grid1">
-					<img src="images/pic1.jpg" alt="" />
+					<img src="<?php echo base_url();?>img/pic1.jpg" alt="" />
 					<h3>Our Courses</h3>
 					<p>soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; </p>
 					<a href="#"><p><span class="two">Read More</span></p></a>
 			</div>
 			<div class="bot-grid2">
-					<img src="images/GPA.png" alt="" />
+					<img src="<?php echo base_url();?>img/GPA.png" alt="" />
 					<h3>See your GPA</h3>
 					<p>soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; </p>
 					<a href="#"><p><span class="three">Read More</span></p></a>
 			</div>
 			<div class="bot-grid3">
-					<img src="images/pic3.jpg" alt="" />
+					<img src="<?php echo base_url();?>img/pic3.jpg" alt="" />
 					<h3>Check Graduation Status</h3>
 					<p>soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; </p>
 					<a href="#"><p><span class="four">Read More</span></p></a>
