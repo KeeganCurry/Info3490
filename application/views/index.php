@@ -57,11 +57,11 @@ $("#foo3").carouFredSel({
 	   </div>
 	   <div class="menu">
 			<ul>
-				 <li><?php echo anchor('welcome', 'Click here');?></li>
-				 <li><a href="about.html">About</a></li>
-				 <li><a href="programs.html">Courses</a></li>
-				 <li><a href="programs.html">GPA Info</a></li>
-				 <li><a href="contact.html">Contact</a></li>
+				 <li><?php echo anchor('', 'Home');?></li>
+				 <li><?php echo anchor('', 'About');?></li>
+				 <li><?php echo anchor('welcome/courses', 'Courses');?></li>
+				 <li><?php echo anchor('', 'GPA Info');?></li>
+				 <li><?php echo anchor('', 'Contact');?></li>
 				 <div class="clear"></div>
 			</ul>
 		</div>
