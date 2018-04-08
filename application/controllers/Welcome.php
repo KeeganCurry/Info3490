@@ -25,9 +25,9 @@ class Welcome extends CI_Controller {
 		$this->load->view('index');
 	}
 	
-	public function hello()
+	public function courses()
 	{
 		$this->load->helper('url');
-		$this->load->view('index');
+		$this->load->view('programs');
 	}
 }
