@@ -8,12 +8,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
 <title>eAdvising | Courses</title>
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!--changed js and css links to codeigniter format to reference from root folders css and js-->
+<link rel = "stylesheet" type = "text/css" media="all" href = "<?php echo base_url();?>css/style.css">
+<link rel = "stylesheet" type = "text/css" media="all" href = "<?php echo base_url();?>css/examples.css">
+<script type = 'text/javascript' src = "<?php echo base_url();?>js/jquery-1.8.1.min.js"></script>
+<script type = 'text/javascript' src = "<?php echo base_url();?>js/jquery.carouFredSel-6.0.5-packed.js"></script>
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link rel="stylesheet" href="css/examples.css" type="text/css" media="all" />
-<script src="js/jquery-1.8.1.min.js"></script>
-<script src="js/jquery.carouFredSel-6.0.5-packed.js"></script>
+
+
 <script type="text/javascript" language="javascript">
 			$(function() {
 				
@@ -37,26 +41,26 @@ $("#foo3").carouFredSel({
 	function() { $(this).find("div").slideUp();	}
 );
 			});
-		</script>
-		<script type="text/javascript" language="javascript">
+</script>
+	<script type="text/javascript" language="javascript">
 			var siteroot = "../";
-		</script>
-</head>		
+	</script>
+</head>
 <body>
 <div class="header-bg">
 <div class="wrap">
 <div class="wrapper">
-	<div class="header">
-      <div class="logo">
-			<a href="index.html"><img src="../web/images/logo.png" /></a>
-	  </div>
+   <div class="header">
+       <div class="logo">
+			<a href="index.html"><img src="<?php echo base_url();?>img/uwilogo.png" width = "200" /></a> <!--changed src to codeigniter format to reference from root-->
+	   </div>
 	   <div class="menu">
 			<ul>
-				 <li><a href="index.html">Home</a></li>
-				 <li><a href="about.html">About</a></li>
-				 <li><a href="programs.html">Courses</a></li>
-				 <li><a href="programs.html">GPA Info</a></li>
-				 <li><a href="contact.html">Contact</a></li>
+				 <li><?php echo anchor('', 'Home');?></li>
+				 <li><?php echo anchor('', 'About');?></li>
+				 <li><?php echo anchor('welcome/courses', 'Courses');?></li>
+				 <li><?php echo anchor('', 'GPA Info');?></li>
+				 <li><?php echo anchor('', 'Contact');?></li>
 				 <div class="clear"></div>
 			</ul>
 		</div>
