@@ -30,4 +30,28 @@ class Welcome extends CI_Controller {
 		$this->load->helper('url');
 		$this->load->view('programs');
 	}
+	
+	public function gpa()
+	{
+		$this->load->helper('url');
+		$this->load->view('gpa');
+	}
+	
+	public function prerequisitecourses()
+	{
+		$this->load->helper('url');
+		$this->load->view('prerequisitecourses');
+	}
+	
+	public function corecourses()
+	{
+		$this->load->helper('url');
+		$this->load->view('corecourses');
+	}
+	
+	public function gpacourses()
+	{
+		$this->load->helper('url');
+		$this->load->view('gpacourses');
+	}
 }
