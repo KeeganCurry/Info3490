@@ -80,7 +80,7 @@ $("#foo3").carouFredSel({
    			    	<p>View the Core Courses for your Degree</p>
    			    </div>
    			     <div class="prog-top">
-					<h3><a href = '#'>View Courses</a></h3>
+					<h3><?php echo anchor('welcome/corecourses', 'View Courses');?></h3>
    			     	  <div class="prog-text">
    			    <div class="prog-left">
    			    	<div class="p-img">
@@ -139,7 +139,7 @@ $("#foo3").carouFredSel({
 						   <p>View the Core Courses for your Degree</p>
 					   </div>
 						<div class="prog-top">
-							 <h3><a href = '#'>View Courses</a></h3>
+							 <h3><?php echo anchor('welcome/prerequisitecourses', 'View Courses');?></h3>
 							  <div class="prog-text">
 					   <div class="prog-left">
 						   <div class="p-img">
@@ -197,7 +197,7 @@ $("#foo3").carouFredSel({
 							   <p>View the Core Courses for your Degree</p>
 						   </div>
 							<div class="prog-top">
-								<h3><a href = '#'>View Courses</a></h3>
+								<h3><?php echo anchor('welcome/gpacourses', 'View Courses');?></h3>
 								  <div class="prog-text">
 						   <div class="prog-left">
 							   <div class="p-img">
